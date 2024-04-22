@@ -13,3 +13,7 @@ export const getProduct = async (req, res) => {
 export const getProductById = (req, res) => {
   res.send('Mostrando producto con el ID...')
 }
+
+export const storeProduct = async (res, req) => {
+  res.status(201).json({ Message: 'Creado' })
+}
